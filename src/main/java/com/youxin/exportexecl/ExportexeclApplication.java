@@ -14,10 +14,13 @@ public class ExportexeclApplication extends SpringBootServletInitializer {
         SpringApplication.run(ExportexeclApplication.class, args);
 
         log.info("------------------------SERVER START--------------------------");
+        log.info("------------------------服务已启动--------------------------");
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        log.info("------------------------SERVER START！！！--------------------------");
+        log.info("------------------------服务已启动！！！--------------------------");
         return application.sources(ExportexeclApplication.class);
     }
 
